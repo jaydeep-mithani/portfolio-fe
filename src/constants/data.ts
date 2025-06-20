@@ -2,10 +2,8 @@ import {
   faBootstrap,
   faGitAlt,
   faJsSquare,
-  faNodeJs,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCode, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
   GraphQLIcon,
   IllustratorIcon,
@@ -348,6 +346,10 @@ export const LanguagesData = [
 ];
 
 export const basicDetails = {
+  about:
+    "Frontend-focused Full-Stack Developer with nearly 3 years of experience delivering scalable, performant web applications",
+  professionalJourney:
+    "I specialize in creating exceptional user experiences using modern frontend technologies. From leading entire frontend architectures to building complex interactive components, I've successfully delivered solutions for SMBs, enterprises, and healthcare providers.",
   email: "jaydeepmithani13@gmail.com",
   phone: "+91 90547 22745",
   location: "Pune, India",

@@ -212,11 +212,11 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold gradient-text mb-4">
-              Let's Work Together
+              Let&#39;s Work Together
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Ready to bring your next project to life? Let's discuss how I can
-              help you achieve your goals.
+              Ready to bring your next project to life? Let&#39;s discuss how I
+              can help you achieve your goals.
             </p>
           </div>
 

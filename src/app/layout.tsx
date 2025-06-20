@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
-import {
-  Doto,
-  Grand_Hotel,
-  Inter,
-  Jacquarda_Bastarda_9,
-  Micro_5,
-  Monsieur_La_Doulaise,
-  Rouge_Script,
-  Share_Tech,
-  Share_Tech_Mono,
-  Stalemate,
-} from "next/font/google";
+import { Doto, Share_Tech, Share_Tech_Mono } from "next/font/google";
 import { CustomCursor, Nav, ScrollProgressIndicator } from "@/components";
 import "@/lib/fontawesome";
 import "./globals.css";

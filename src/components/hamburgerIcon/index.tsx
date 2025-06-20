@@ -15,15 +15,20 @@ const HamburgerIcon = ({
 }: HamburgerIconProps) => {
   const height = Math.round(size * 0.56); // Maintain aspect ratio
 
+  const style: React.CSSProperties = {
+    width: `${size}px`,
+    height: `${height}px`,
+    // Custom CSS variables added using type assertion
+    ...({
+      "--color": color,
+      "--hover-color": hoverColor || color,
+    } as React.CSSProperties),
+  };
+
   return (
     <div
       className={`${classes.nav} ${className} relative flex justify-center items-center cursor-pointer`}
-      style={{
-        ["--color" as any]: color,
-        ["--hover-color" as any]: hoverColor || color,
-        width: `${size}px`,
-        height: `${height}px`,
-      }}
+      style={style}
     >
       <input
         type="checkbox"

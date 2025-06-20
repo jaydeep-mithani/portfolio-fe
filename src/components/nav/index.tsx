@@ -71,7 +71,6 @@ const Nav = () => {
     const handleScroll = () => {
       if (isHovering) return;
 
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
@@ -117,12 +116,12 @@ const Nav = () => {
     };
 
     // Throttled scroll handler
-    let scrollTimeout: NodeJS.Timeout;
+    let scrollTimeout: NodeJS.Timeout | null = null;
     const throttledScroll = () => {
       if (scrollTimeout) return;
       scrollTimeout = setTimeout(() => {
         handleScroll();
-        scrollTimeout = null as any;
+        scrollTimeout = null;
       }, 16); // ~60fps
     };
 

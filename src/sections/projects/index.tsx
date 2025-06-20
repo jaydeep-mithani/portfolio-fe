@@ -1,8 +1,5 @@
-import { Pill, ProjectCard } from "@/components";
+import { ProjectCard } from "@/components";
 import { projectsData } from "@/constants/data";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Projects = () => {
   return (
