@@ -1,15 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Doto, Share_Tech, Share_Tech_Mono } from "next/font/google";
+import { CustomCursor, Nav, ScrollProgressIndicator } from "@/components";
+import "@/lib/fontawesome";
 import "./globals.css";
+import { Footer } from "@/sections";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const doto = Doto({
+  variable: "--font-rouge-script",
   subsets: ["latin"],
+  weight: ["400"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const shareTech = Share_Tech({
+  variable: "--font-share-tech",
   subsets: ["latin"],
+  weight: ["400"],
+});
+
+const shareTechMono = Share_Tech_Mono({
+  variable: "--font-share-tech",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +36,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${shareTech.variable} ${shareTechMono.variable} ${doto.variable} antialiased bg-gray-900 text-white overflow-x-hidden`}
       >
+        <CustomCursor />
+        <ScrollProgressIndicator />
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
