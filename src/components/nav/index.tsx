@@ -87,7 +87,7 @@ const Nav = () => {
       }
 
       // Find the section that's most visible
-      let activeSection = "home";
+      let activeSection = "";
       let maxVisibility = 0;
 
       sections.forEach((section) => {
@@ -112,7 +112,9 @@ const Nav = () => {
         }
       });
 
-      setActive(activeSection);
+      if (activeSection && sectionIds.includes(activeSection)) {
+        setActive(activeSection);
+      }
     };
 
     // Throttled scroll handler
