@@ -1,9 +1,30 @@
 "use client";
-
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 const CustomCursor = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+
   useEffect(() => {
+    // Check if device supports hover and has fine pointer (mouse)
+    const checkIsDesktop = () => {
+      return window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    };
+
+    setIsDesktop(checkIsDesktop());
+
+    // Listen for changes (e.g., when connecting/disconnecting external mouse)
+    const mediaQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const handleChange = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
+
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
+  useEffect(() => {
+    // Only add mouse event listeners if it's a desktop device
+    if (!isDesktop) return;
+
     const cursorDot = document.getElementById("cursorDot");
     const cursorOutline = document.getElementById("cursorOutline");
 
@@ -25,7 +46,10 @@ const CustomCursor = () => {
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
+  }, [isDesktop]);
+
+  // Don't render anything on touch devices
+  if (!isDesktop) return null;
 
   return (
     <Fragment>
