@@ -3,7 +3,7 @@ import { LanguagesData } from "@/constants/data";
 
 const Languages = () => {
   return (
-    <section className="py-20 relative">
+    <section id="languages" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold gradient-text mb-4">Languages</h2>
