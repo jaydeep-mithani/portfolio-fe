@@ -126,6 +126,7 @@ const Hero = () => {
               href="./docs/Resume.pdf"
               target="_blank"
               className="magnetic-btn border-2 border-purple-500 px-8 py-4 rounded-full text-white font-semibold text-lg hover:bg-purple-500 transition-colors"
+              download={"Jaydeep Mithani Resume.pdf"}
             >
               Download Resume
             </a>
