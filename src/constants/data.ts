@@ -14,6 +14,11 @@ import {
   TailwindCSSIcon,
   TypescriptIcon,
 } from "../../public/icons";
+import {
+  CypressIcon,
+  JestIcon,
+  ReactTestingLibraryIcon,
+} from "../../public/icons/customIcons";
 
 export const navItems = ["Home", "About", "Projects", "Experience", "Contact"];
 
@@ -110,6 +115,30 @@ export const techStack = [
     color: "text-purple-500",
     custom: false,
     customIcon: undefined,
+  },
+  {
+    id: "reacttestinglibrary",
+    title: "React Testing Library",
+    icon: undefined,
+    color: "text-red-400",
+    custom: true,
+    customIcon: ReactTestingLibraryIcon,
+  },
+  {
+    id: "jest",
+    title: "Jest",
+    icon: undefined,
+    color: "text-pink-300",
+    custom: true,
+    customIcon: JestIcon,
+  },
+  {
+    id: "cypress",
+    title: "Cypress",
+    icon: undefined,
+    color: "text-white",
+    custom: true,
+    customIcon: CypressIcon,
   },
   {
     id: "ps",
@@ -294,7 +323,7 @@ export const experienceInfo = [
     ],
     blockquote: null,
     start: "Jul 2022",
-    end: "Nov 2023",
+    end: "Feb 2024",
   },
 ];
 
