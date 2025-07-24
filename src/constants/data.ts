@@ -179,8 +179,8 @@ export const projectsData = [
       "HTML2PDF",
       "FCM",
     ],
-    url: "https://getxora.com/",
-    code: null,
+    url: null,
+    code: "https://github.com/jaydeep-mithani/xora-fe",
   },
   {
     id: "hairhouse",
