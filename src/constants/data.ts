@@ -291,7 +291,7 @@ export const experienceInfo = [
     ],
     blockquote: `"Jaydeep had complete ownership of the frontend — highly recommend him for product-driven frontend roles." — Founder, Xora`,
     start: "Mar 2025",
-    end: "June 2025",
+    end: "July 2025",
   },
   {
     id: "hdm",
