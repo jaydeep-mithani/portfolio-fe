@@ -160,6 +160,24 @@ export const techStack = [
 
 export const projectsData = [
   {
+    id: "hairhouse",
+    thumbnail:
+      "https://res.cloudinary.com/dc6bzvxz8/image/upload/v1748615713/hh_vlncmd.png",
+    title: "Hairhouse E-Commerce Platform",
+    description:
+      "Developed responsive, accessible UI components and sections for Hairhouse, one of Australia's leading haircare e-commerce platforms. Contributed to a scalable component library using Storybook, built with React and GraphQL. Collaborated with a globally distributed development team in a fast-paced agile environment.",
+    skills: [
+      "React",
+      "GraphQL",
+      "Javascript",
+      "Shopify",
+      "Storybook",
+      "GitHub",
+    ],
+    url: "https://www.hairhouse.com.au/",
+    code: "https://github.com/jaydeep-mithani/Hairhouse",
+  },
+  {
     id: "xora",
     thumbnail:
       "https://res.cloudinary.com/dc6bzvxz8/image/upload/v1750370305/Untitled_design_jfyr44.png",
@@ -183,24 +201,6 @@ export const projectsData = [
     code: "https://github.com/jaydeep-mithani/xora-fe",
   },
   {
-    id: "hairhouse",
-    thumbnail:
-      "https://res.cloudinary.com/dc6bzvxz8/image/upload/v1748615713/hh_vlncmd.png",
-    title: "Hairhouse E-Commerce Platform",
-    description:
-      "Developed responsive, accessible UI components and sections for Hairhouse, one of Australia's leading haircare e-commerce platforms. Contributed to a scalable component library using Storybook, built with React and GraphQL. Collaborated with a globally distributed development team in a fast-paced agile environment.",
-    skills: [
-      "React",
-      "GraphQL",
-      "Javascript",
-      "Shopify",
-      "Storybook",
-      "GitHub",
-    ],
-    url: "https://www.hairhouse.com.au/",
-    code: null,
-  },
-  {
     id: "feportfolio",
     thumbnail:
       "https://res.cloudinary.com/dc6bzvxz8/image/upload/v1750364897/image_t9gr3v.png",
@@ -221,6 +221,54 @@ export const projectsData = [
     ],
     url: "https://jaydeepmithani.vercel.app",
     code: "https://github.com/jaydeep-mithani/portfolio-fe",
+  },
+  {
+    id: "themeswitcher",
+    thumbnail:
+      "https://res.cloudinary.com/dc6bzvxz8/image/upload/v1755784738/logo_2_b1phxp.png",
+    title: "Theme Switcher",
+    description:
+      "A small 3 page website that switches between three unique selection of themes, and persists the theme after refresh or when revisiting. The themes in question are not mere dark/ligth modes, but the entire look and feel changes drastically including the color scheme, layout, fonts, spacing etc. while maintaining mobile responsiveness and best code practices.",
+    skills: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Tailwind CSS",
+      "Tailwind Layers",
+      "Context API",
+      "Lucid-react",
+      "App Router",
+      "GitHub",
+      "Vercel",
+    ],
+    url: "https://next-themeswitcher.vercel.app/",
+    code: "https://github.com/jaydeep-mithani/theme-switcher",
+  },
+  {
+    id: "petpod",
+    thumbnail:
+      "https://res.cloudinary.com/dc6bzvxz8/image/upload/v1755787965/Untitled-3_iadnry.png",
+    title: "Pet Pod (Code Name)",
+    description:
+      "A team driven project, code named \"Pet Pod\" is a compassionate platform dedicated to pet adoption, not sales. Whether you're looking to rehome a beloved pet or find your perfect furry companion, we make meaningful connections happen. Users can create adoption posts with photos and details, or browse available pets to find their match. Our mission is simple: ensuring every pet finds a loving, trustworthy home where they'll be cherished. Currently in early development, upon initial releasse we'll be building features based on community feedback to create the best possible experience for pets and their future families. Help us in giving every furball the loving home they deserve.",
+    skills: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Tailwind CSS",
+      "Redux",
+      "Springboot",
+      "Java",
+      "Firebase",
+      "Lucid-react",
+      "Git Barnch Rules",
+      "CI/CD",
+      "Agile Methodologies",
+      "vercel",
+      "GitHub",
+    ],
+    url: "",
+    code: "https://github.com/jaydeep-mithani/Pet-Pod-FE",
   },
   {
     id: "careerprofile",
@@ -274,6 +322,25 @@ export const projectsData = [
     skills: ["HTML", "CSS", "Javascript", "GitHub", "GitHub Pages"],
     url: "https://jaydeep-mithani.github.io/NFT-Marketplace-Template/index.htm",
     code: "https://github.com/jaydeep-mithani/NFT-Marketplace-Template",
+  },
+  {
+    id: "assignmentcode",
+    thumbnail:
+      "https://res.cloudinary.com/dc6bzvxz8/image/upload/v1755783234/Untitled-2_mbakit.png",
+    title: "Farm App",
+    description:
+      "A fully animated landing page I developed as an assignment project, without using create-react-app or any other boilerpate. Implemented full setup from scratch, used tailwind css for styling and pure javascript for all animations.",
+    skills: [
+      "React",
+      "Javascript",
+      "Tailwind CSS",
+      "Webpack",
+      "Babel",
+      "Vercel",
+      "GitHub",
+    ],
+    url: "https://ten-twenty-fe-test.vercel.app/",
+    code: "https://github.com/jaydeep-mithani/TenTwenty-FE-Test",
   },
 ];
 
